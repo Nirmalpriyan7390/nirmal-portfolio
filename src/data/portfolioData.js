@@ -1,13 +1,13 @@
 export const portfolioData = {
   meta: {
     name: "Nirmal Priyadarshan",
-    title: "AI-Powered Product Designer",
-    tagline: "Designing digital products with AI.",
-    subheadline: "I'm Nirmal Priyadarshan, an AI-Powered Product Designer who turns ideas into thoughtful digital experiences using product thinking, design and AI-assisted workflows.",
-    supportingLine: "Product Design · UI/UX · AI · SaaS · Mobile",
-    uvp: "I design products with AI, not just screens with AI.",
+    title: "Product Designer (UI/UX)",
+    tagline: "Designing digital products that scale.",
+    subheadline: "I'm Nirmal Priyadarshan, a Product Designer (UI/UX) who turns complex business workflows into thoughtful digital experiences using product thinking, scalable design systems, and modern AI workflows.",
+    supportingLine: "Product Design · UI/UX · B2B SaaS · Mobile Apps · Design Systems",
+    uvp: "I design intuitive products from 0 to 1, bridging user empathy with engineering feasibility.",
     background: "B.Sc. Information Technology",
-    experience: "2+ years in IT / Product Design / UI/UX",
+    experience: "2+ years in Product Design / UI/UX",
     location: "Tamil Nadu, India — open to remote & global roles",
     email: "nirmaluiux7@gmail.com",
     linkedin: "linkedin.com/in/nirmal-uiux",
@@ -1181,7 +1181,7 @@ export const portfolioData = {
           title: "09 — 1-Sprint Production Build with Lovable.dev",
           content: [
             "Built and shipped end-to-end within a single sprint from blank canvas to production deployment at https://trackgle.jseven.in/ using Lovable.dev.",
-            "As an AI-powered product designer, utilized Lovable.dev to scaffold the full-stack architecture — sticky timer state machines, SVG daily hours histograms, and multi-project task status matrices."
+            "As a product designer, utilized Lovable.dev to scaffold the full-stack architecture — sticky timer state machines, SVG daily hours histograms, and multi-project task status matrices."
           ]
         },
         finalProduct: {
@@ -1506,8 +1506,8 @@ export const portfolioData = {
   ],
 
   about: {
-    headline: "Designer. Builder. AI explorer.",
-    intro: "I'm Nirmal Priyadarshan, an AI-Powered Product Designer with a background in Information Technology.\n\nI enjoy turning complex ideas into simple digital experiences.\n\nOver the past few years, I've worked across SaaS, healthcare, mobile applications and other digital products.\n\nWhat makes my approach different is the way I combine product thinking and design with modern AI-assisted workflows.\n\nI use AI to explore faster, prototype faster and build faster — while keeping design decisions, user experience and product thinking at the center.",
+    headline: "Product Designer crafting experiences that scale.",
+    intro: "I'm Nirmal Priyadarshan, a Product Designer (UI/UX) with a background in Information Technology.\n\nI turn complex business workflows into simple, human digital experiences.\n\nOver the past few years, I've designed and shipped 6+ live commercial products across B2B SaaS, Healthcare, Fintech, and Mobile applications.\n\nWith a technical foundation in IT, I bridge the gap between user empathy, business metrics, and engineering feasibility.\n\nI combine deep product thinking, scalable design systems, and modern AI-assisted prototyping to explore, test, and ship high-impact software faster.",
     philosophies: [
       {
         title: "Start with the problem.",

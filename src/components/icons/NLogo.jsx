@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * NLogo - Bespoke brand mark for Nirmal Priyadarshan (AI-Powered Product Designer)
+ * NLogo - Bespoke brand mark for Nirmal Priyadarshan (Product Designer)
  * Features a dynamic isometric ribbon "N" with iridescent violet, cyan, and indigo gradients.
  * 
  * @param {number} size - Pixel size (default: 32)

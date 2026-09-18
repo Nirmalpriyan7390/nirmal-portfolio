@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-[#0e1118] border border-white/10 text-xs text-slate-300 backdrop-blur-md shadow-inner hover:border-brand-500/40 transition-colors">
             <span className="font-mono text-brand-300 font-bold flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-brand-400" />
-              AI-Powered Product Designer
+              Product Designer (UI/UX)
             </span>
             <span className="text-slate-600">·</span>
             <span className="font-mono text-emerald-400 font-semibold flex items-center gap-1.5">
@@ -57,9 +57,9 @@ export default function Hero() {
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05] mb-6"
         >
           Designing digital products <br className="hidden sm:inline" />
-          with{' '}
+          that{' '}
           <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-brand-200 to-white">
-            AI.
+            scale.
           </span>
         </motion.h1>
 

@@ -21,7 +21,7 @@ export default function Footer() {
             <div>
               <div className="text-sm font-bold text-white">Nirmal Priyadarshan</div>
               <div className="text-xs text-slate-400">
-                AI-Powered Product Designer · Tamil Nadu, India (Remote &amp; Global)
+                Product Designer (UI/UX) · Tamil Nadu, India (Remote &amp; Global)
               </div>
             </div>
           </div>
