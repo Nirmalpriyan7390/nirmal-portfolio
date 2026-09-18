@@ -54,12 +54,12 @@ export default function Hero() {
         {/* Headline: Editorial & Minimalist */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05] mb-6"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05] mb-6"
         >
-          Designing digital products <br className="hidden sm:inline" />
+          Designing intuitive digital products <br className="hidden sm:inline" />
           that{' '}
           <span className="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-brand-200 to-white">
-            scale.
+            solve real problems.
           </span>
         </motion.h1>
 

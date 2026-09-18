@@ -2,8 +2,8 @@ export const portfolioData = {
   meta: {
     name: "Nirmal Priyadarshan",
     title: "Product Designer (UI/UX)",
-    tagline: "Designing digital products that scale.",
-    subheadline: "I'm Nirmal Priyadarshan, a Product Designer (UI/UX) who turns complex business workflows into thoughtful digital experiences using product thinking, scalable design systems, and modern AI workflows.",
+    tagline: "Designing intuitive digital products that solve real problems.",
+    subheadline: "Product Designer with 2+ years of experience designing 6+ live commercial products across B2B SaaS, Healthcare, and Mobile apps. Leveraging modern AI-assisted workflows to ship production-grade experiences 2x faster.",
     supportingLine: "Product Design · UI/UX · B2B SaaS · Mobile Apps · Design Systems",
     uvp: "I design intuitive products from 0 to 1, bridging user empathy with engineering feasibility.",
     background: "B.Sc. Information Technology",
