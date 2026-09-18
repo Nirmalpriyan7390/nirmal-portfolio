@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirmal Priyadarshan MV - Product Designer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1e28;
+      background: #f4f6fa;
+      line-height: 1.45;
+      font-size: 11.5px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page-container {
+      max-width: 800px;
+      margin: 24px auto;
+      background: #ffffff;
+      padding: 36px 42px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-radius: 4px;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+        font-size: 10.5px;
+        line-height: 1.38;
+      }
+      .page-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 20px 24px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    .header {
+      text-align: center;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #0f172a;
+      margin-bottom: 12px;
+    }
+    .name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #090d16;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #ea580c;
+      letter-spacing: 0.3px;
+      margin-bottom: 8px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      font-size: 11px;
+      color: #475569;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .contact-item a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .summary-text {
+      color: #334155;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      row-gap: 4px;
+      column-gap: 8px;
+      font-size: 11px;
+    }
+    .skill-label {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .skill-val {
+      color: #334155;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .job-role {
+      font-weight: 700;
+      font-size: 12px;
+      color: #0f172a;
+    }
+    .job-company {
+      font-weight: 600;
+      color: #334155;
+    }
+    .job-date {
+      font-size: 10.5px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .project-block {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .project-title {
+      font-weight: 700;
+      font-size: 11.5px;
+      color: #090d16;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .project-title a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .project-title a:hover {
+      text-decoration: underline;
+    }
+    .project-meta {
+      font-size: 10px;
+      font-weight: 500;
+      color: #64748b;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .bullet-list {
+      list-style-type: disc;
+      margin-left: 16px;
+      margin-top: 2px;
+      color: #334155;
+    }
+    .bullet-list li {
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+    .bullet-list li strong {
+      color: #0f172a;
+    }
+    .action-bar {
+      max-width: 800px;
+      margin: 16px auto 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #0f172a;
+      color: #ffffff;
+      border: 1px solid #0f172a;
+    }
+    .btn-primary:hover {
+      background: #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar no-print">
+    <button onclick="window.print()" class="btn btn-primary">
+      🖨️ Print / Save as 1-Page PDF
+    </button>
+  </div>
+
+  <div class="page-container">
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="name">NIRMAL PRIYADARSHAN MV</h1>
+      <div class="title">AI-Powered Product Designer · UI/UX Designer</div>
+      <div class="contact-bar">
+        <span class="contact-item">📞 +91 8682834411</span>
+        <span class="contact-item">✉️ <a href="mailto:nirmaluiux7@gmail.com">nirmaluiux7@gmail.com</a></span>
+        <span class="contact-item">🔗 <a href="https://linkedin.com/in/nirmal-uiux" target="_blank">linkedin.com/in/nirmal-uiux</a></span>
+        <span class="contact-item">🌐 <a href="https://nirmal-portfolio.vercel.app" target="_blank">nirmal-portfolio.vercel.app</a></span>
+        <span class="contact-item">📍 Tamil Nadu, India</span>
+      </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Product Designer with 2+ years of experience designing and shipping <strong>6+ live commercial products</strong> across Fintech, Healthcare SaaS, and E-Commerce. Combines end-to-end user research, information architecture, and scalable design systems with modern AI-assisted prototyping workflows to ship production-grade digital products 2x faster. Proven track record across active platforms including <strong>Index Waves (500+ downloads, 100+ DAU on Google Play)</strong>, <strong>IppoBill (ippobill.com)</strong>, <strong>CareZhen (carezhen.com)</strong>, and <strong>Trackgle (trackgle.jseven.in)</strong>.
+      </p>
+    </section>
+
+    <!-- CORE COMPETENCIES & SKILLS -->
+    <section class="section">
+      <div class="section-title">Core Competencies & Skills</div>
+      <div class="skills-grid">
+        <div class="skill-label">Design Skills:</div>
+        <div class="skill-val">Product Thinking (0→1), End-to-End UX/UI, Design Systems & Component Tokens, Mobile App UX (iOS & Android), B2B SaaS Dashboard Architecture, Information Architecture, Wireframing & Rapid Prototyping, Usability Testing</div>
+        
+        <div class="skill-label">Tools & AI:</div>
+        <div class="skill-val">Figma (Auto-Layout, Variables, Tokens), Jira, AI-Assisted Development (Cursor, Claude, v0 by Vercel), Git, Responsive Design</div>
+
+        <div class="skill-label">Frontend:</div>
+        <div class="skill-val">HTML5, CSS3, Tailwind CSS, Component Architecture, Developer Handoff</div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section class="section">
+      <div class="section-title">Professional Experience</div>
+
+      <!-- J7 Technology Solutions -->
+      <div style="margin-bottom: 10px;">
+        <div class="job-header">
+          <div>
+            <span class="job-role">Product Designer · UI/UX Designer</span>
+            <span class="job-company">| J7 Technology Solutions Pvt Ltd, Tenkasi</span>
+          </div>
+          <span class="job-date">March 2024 – Present</span>
+        </div>
+
+        <!-- Index Waves -->
+        <div class="project-block">
+          <div class="project-title">
+            <span>Index Waves</span>
+            <span class="project-meta">· Stock Trading Signals App · <a href="https://play.google.com/store" target="_blank">Google Play</a> · 500+ Downloads, 100+ DAU</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Designed the 0→1 mobile experience: high-urgency call cards displaying entry price, dual targets, stop-loss, and real-time open/closed badges, reducing signal execution time to under 3 seconds.</li>
+            <li>Architected dual interfaces: trader-facing Android app and an analyst command center for publishing and managing live market calls.</li>
+            <li>Created a dark-mode design system with monospace signal tags later extended across two sibling trading platforms (MCX Premier & Equity Emphas).</li>
+          </ul>
+        </div>
+
+        <!-- IppoBill SaaS -->
+        <div class="project-block">
+          <div class="project-title">
+            <span>IppoBill SaaS</span>
+            <span class="project-meta">· GST Billing, Inventory & POS Management · <a href="https://www.ippobill.com" target="_blank">ippobill.com</a></span>
+          </div>
+          <ul class="bullet-list">
+            <li>Designed the complete platform for Indian MSMEs: billing, GST invoicing, inventory tracking, and customer ledgers across web and mobile.</li>
+            <li>Optimized point-of-sale invoice creation for speed while customers wait at counter checkout, eliminating 4 redundant manual steps through auto-populated HSN codes and tax splits from product catalogs.</li>
+          </ul>
+        </div>
+
+        <!-- CareZhen & Setter Healthcare SaaS -->
+        <div class="project-block">
+          <div class="project-title">
+            <span>CareZhen & Setter</span>
+            <span class="project-meta">· Hospital Management & US Healthcare Appointment SaaS · <a href="https://www.carezhen.com" target="_blank">carezhen.com</a></span>
+          </div>
+          <ul class="bullet-list">
+            <li>Designed role-based portals for doctors, receptionists, pharmacists, and admins—ensuring each persona sees only relevant clinical workflows.</li>
+            <li>Designed self-serve onboarding with a modular toggle configuration system for US hospital groups, eliminating engineering setup overhead.</li>
+            <li>Surfaced DPDR compliance audit alerts and SMS character limits directly inside forms rather than buried in settings, preventing regulatory send errors.</li>
+          </ul>
+        </div>
+
+        <!-- Trackgle & Goyab -->
+        <div class="project-block">
+          <div class="project-title">
+            <span>Trackgle & Goyab</span>
+            <span class="project-meta">· B2B Sprint & Time Tracking SaaS (<a href="https://trackgle.jseven.in" target="_blank">trackgle.jseven.in</a>) & Android Productivity (<a href="https://play.google.com/store" target="_blank">Google Play</a>)</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Designed and shipped <strong>Trackgle</strong> end-to-end in a single sprint using AI-assisted development workflows: task boards, timesheets, and leave tracking.</li>
+            <li>Designed <strong>Goyab</strong>: local-first content saving app with zero account friction, Smart Reminders, and private encrypted Google Drive backup.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fabevy Software Services -->
+      <div>
+        <div class="job-header">
+          <div>
+            <span class="job-role">UI/UX Designer</span>
+            <span class="job-company">| Fabevy Software Services Pvt Ltd, Tenkasi</span>
+          </div>
+          <span class="job-date">May 2023 – October 2023</span>
+        </div>
+
+        <div class="project-block">
+          <div class="project-title">
+            <span>IppoKart & Farm Produce</span>
+            <span class="project-meta">· E-Commerce Marketplace (<a href="https://www.ippokart.com" target="_blank">ippokart.com</a>) & Fresh Delivery App</span>
+          </div>
+          <ul class="bullet-list">
+            <li><strong>IppoKart:</strong> Designed multi-facet catalog filtering (gender, brand, price slider, color swatches) and in-cart stock triage tooltips ('Only 3 available from seller') to protect checkout momentum and reduce cart abandonment.</li>
+            <li><strong>Farm Produce:</strong> Designed 20-screen mobile grocery ordering experience focused on regional accessibility, fresh perishables discovery, and delivery trust badges.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" style="margin-bottom: 0;">
+      <div class="section-title">Education</div>
+      <div class="job-header">
+        <div>
+          <span class="job-role">Bachelor of Information Technology (B.Tech / B.Sc IT)</span>
+          <span class="job-company">| Karpagam University, Coimbatore</span>
+        </div>
+        <span class="job-date">2017 – 2021</span>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
