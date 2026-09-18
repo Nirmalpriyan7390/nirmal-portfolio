@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#090d16; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141a29"/>
+      <stop offset="100%" stop-color="#0c101a"/>
+    </linearGradient>
+    <linearGradient id="cardHighlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f1838"/>
+      <stop offset="100%" stop-color="#141829"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1280" height="60" fill="url(#headerGrad)"/>
+  <line x1="0" y1="60" x2="1280" y2="60" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Window controls -->
+  <circle cx="28" cy="30" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="30" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="30" r="6" fill="#10b981"/>
+
+  <!-- Brand logo & Workspace -->
+  <g transform="translate(100, 18)">
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="#8b5cf6"/>
+    <path d="M7 12h10M12 7v10" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15" font-weight="700" letter-spacing="0.5">Trackle</text>
+    <rect x="96" y="2" width="1" height="20" fill="#334155"/>
+    <text x="110" y="16" fill="#94a3b8" font-size="13" font-family="monospace">trackgle.jseven.in</text>
+    <rect x="250" y="2" width="70" height="20" rx="4" fill="#1e1b4b" stroke="#4338ca"/>
+    <text x="258" y="16" fill="#a5b4fc" font-size="11" font-weight="600">Sprint 14</text>
+  </g>
+
+  <!-- Navigation items -->
+  <g transform="translate(480, 22)">
+    <text x="0" y="14" fill="#a78bfa" font-size="13" font-weight="600">Sprint Board</text>
+    <rect x="0" y="26" width="76" height="2" fill="#8b5cf6"/>
+    <text x="110" y="14" fill="#94a3b8" font-size="13">Timesheets</text>
+    <text x="220" y="14" fill="#94a3b8" font-size="13">Backlog</text>
+    <text x="310" y="14" fill="#94a3b8" font-size="13">Velocity Reports</text>
+  </g>
+
+  <!-- User profile & Quick Action -->
+  <g transform="translate(1070, 16)">
+    <rect x="0" y="0" width="110" height="28" rx="8" fill="#8b5cf6"/>
+    <text x="14" y="18" fill="#ffffff" font-size="12" font-weight="700">+ New Task</text>
+    <circle cx="140" cy="14" r="14" fill="#312e81" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="133" y="18" fill="#c4b5fd" font-size="11" font-weight="bold">NP</text>
+  </g>
+
+  <!-- Secondary Board Subheader -->
+  <rect x="0" y="60" width="1280" height="64" fill="#0c111d"/>
+  <line x1="0" y1="124" x2="1280" y2="124" stroke="#1e293b" stroke-width="1"/>
+
+  <g transform="translate(40, 78)">
+    <text x="0" y="20" fill="#ffffff" font-size="20" font-weight="800">Sprint 14: Core AI Scaffolding &amp; In-Card Timesheets</text>
+    <rect x="490" y="5" width="130" height="22" rx="6" fill="#064e3b" stroke="#059669"/>
+    <circle cx="502" cy="16" r="3.5" fill="#34d399"/>
+    <text x="512" y="19" fill="#6ee7b7" font-size="11" font-weight="600">Active · 6 Days Left</text>
+
+    <!-- Velocity telemetry pill -->
+    <rect x="632" y="5" width="170" height="22" rx="6" fill="#1e1b4b" stroke="#6366f1"/>
+    <text x="642" y="19" fill="#c7d2fe" font-size="11" font-family="monospace">Velocity: 42 / 48 SP (88%)</text>
+  </g>
+
+  <!-- Search & Filter Bar -->
+  <g transform="translate(940, 80)">
+    <rect x="0" y="0" width="300" height="32" rx="8" fill="#141a29" stroke="#1e293b"/>
+    <text x="16" y="20" fill="#64748b" font-size="12">Search sprint tasks (⌘K)...</text>
+  </g>
+
+  <!-- KANBAN BOARD COLUMNS (4 Columns) -->
+  <!-- Col 1: BACKLOG -->
+  <g transform="translate(40, 140)">
+    <rect x="0" y="0" width="280" height="550" rx="14" fill="#0d1322" stroke="#1e293b"/>
+    <g transform="translate(16, 16)">
+      <text x="0" y="14" fill="#94a3b8" font-size="12" font-weight="700" letter-spacing="1">TO DO</text>
+      <rect x="52" y="2" width="20" height="16" rx="4" fill="#1e293b"/>
+      <text x="58" y="14" fill="#94a3b8" font-size="10" font-weight="bold">2</text>
+    </g>
+
+    <!-- Card 1 -->
+    <g transform="translate(12, 45)">
+      <rect x="0" y="0" width="256" height="120" rx="10" fill="#141a29" stroke="#1e293b"/>
+      <rect x="12" y="12" width="50" height="18" rx="4" fill="#1e293b"/>
+      <text x="18" y="24" fill="#94a3b8" font-size="10" font-family="monospace">#TRK-112</text>
+      <rect x="66" y="12" width="45" height="18" rx="4" fill="#451a03"/>
+      <text x="72" y="24" fill="#fbbf24" font-size="9" font-weight="600">P2 Med</text>
+      <text x="12" y="52" fill="#f1f5f9" font-size="13" font-weight="600">OAuth2 GitHub Login</text>
+      <text x="12" y="70" fill="#64748b" font-size="11">Implement zero-friction team SSO</text>
+      <rect x="12" y="86" width="55" height="18" rx="4" fill="#0f172a" stroke="#334155"/>
+      <text x="18" y="98" fill="#cbd5e1" font-size="10">Backend</text>
+      <text x="195" y="98" fill="#94a3b8" font-size="11" font-family="monospace">Est: 5h</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(12, 180)">
+      <rect x="0" y="0" width="256" height="110" rx="10" fill="#141a29" stroke="#1e293b"/>
+      <rect x="12" y="12" width="50" height="18" rx="4" fill="#1e293b"/>
+      <text x="18" y="24" fill="#94a3b8" font-size="10" font-family="monospace">#TRK-115</text>
+      <text x="12" y="52" fill="#f1f5f9" font-size="13" font-weight="600">Webhook Payload Schema</text>
+      <text x="12" y="70" fill="#64748b" font-size="11">Slack notification sync on close</text>
+      <rect x="12" y="80" width="55" height="18" rx="4" fill="#0f172a" stroke="#334155"/>
+      <text x="18" y="92" fill="#cbd5e1" font-size="10">DevOps</text>
+      <text x="195" y="92" fill="#94a3b8" font-size="11" font-family="monospace">Est: 3h</text>
+    </g>
+  </g>
+
+  <!-- Col 2: IN PROGRESS (Highlighted) -->
+  <g transform="translate(340, 140)">
+    <rect x="0" y="0" width="290" height="550" rx="14" fill="#0e1326" stroke="#8b5cf6" stroke-width="1.5"/>
+    <g transform="translate(16, 16)">
+      <text x="0" y="14" fill="#c4b5fd" font-size="12" font-weight="700" letter-spacing="1">IN PROGRESS</text>
+      <rect x="100" y="2" width="20" height="16" rx="4" fill="#8b5cf6"/>
+      <text x="106" y="14" fill="#ffffff" font-size="10" font-weight="bold">2</text>
+    </g>
+
+    <!-- Card 1 (HERO CARD WITH ACTIVE IN-CARD TIMER) -->
+    <g transform="translate(12, 45)">
+      <rect x="0" y="0" width="266" height="175" rx="12" fill="url(#cardHighlight)" stroke="#8b5cf6" stroke-width="1.5"/>
+      
+      <!-- Top Badges -->
+      <rect x="12" y="12" width="55" height="18" rx="4" fill="#2e1065" stroke="#7c3aed"/>
+      <text x="18" y="24" fill="#c4b5fd" font-size="10" font-family="monospace" font-weight="bold">#TRK-108</text>
+      <rect x="72" y="12" width="45" height="18" rx="4" fill="#7f1d1d"/>
+      <text x="78" y="24" fill="#fca5a5" font-size="9" font-weight="700">P0 High</text>
+      
+      <!-- Task Title -->
+      <text x="12" y="52" fill="#ffffff" font-size="14" font-weight="700">AI-Assisted Scaffolding</text>
+      <text x="12" y="70" fill="#94a3b8" font-size="11">Timesheet drag &amp; drop state machines</text>
+
+      <!-- ACTIVE IN-CARD TIMER WIDGET -->
+      <rect x="12" y="85" width="242" height="42" rx="8" fill="#1e1338" stroke="#8b5cf6" stroke-width="1"/>
+      <circle cx="28" cy="106" r="4" fill="#22c55e"/>
+      <text x="40" y="110" fill="#e9d5ff" font-size="11" font-weight="600">IN-CARD TIMER</text>
+      <rect x="140" y="93" width="105" height="26" rx="6" fill="#7c3aed"/>
+      <path d="M152 101v10M156 101v10" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <text x="166" y="111" fill="#ffffff" font-size="12" font-family="monospace" font-weight="bold">02:25:40</text>
+
+      <!-- Assignee & Tag -->
+      <g transform="translate(12, 138)">
+        <rect x="0" y="0" width="70" height="20" rx="4" fill="#0f172a" stroke="#334155"/>
+        <text x="6" y="14" fill="#c4b5fd" font-size="10" font-weight="600">Product Design</text>
+        <circle cx="218" cy="10" r="11" fill="#8b5cf6"/>
+        <text x="211" y="14" fill="#ffffff" font-size="9" font-weight="bold">NP</text>
+        <text x="233" y="14" fill="#a78bfa" font-size="10" font-family="monospace">3h logged</text>
+      </g>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(12, 235)">
+      <rect x="0" y="0" width="266" height="120" rx="10" fill="#141a29" stroke="#1e293b"/>
+      <rect x="12" y="12" width="55" height="18" rx="4" fill="#1e293b"/>
+      <text x="18" y="24" fill="#94a3b8" font-size="10" font-family="monospace">#TRK-104</text>
+      <text x="12" y="52" fill="#f1f5f9" font-size="13" font-weight="600">Timesheet Aggregator API</text>
+      <text x="12" y="70" fill="#64748b" font-size="11">Fast hourly roll-up engine</text>
+      <rect x="12" y="86" width="55" height="18" rx="4" fill="#0f172a" stroke="#334155"/>
+      <text x="18" y="98" fill="#cbd5e1" font-size="10">Backend</text>
+      <text x="185" y="98" fill="#94a3b8" font-size="11" font-family="monospace">⏱ 01:15:00</text>
+    </g>
+  </g>
+
+  <!-- Col 3: IN REVIEW -->
+  <g transform="translate(650, 140)">
+    <rect x="0" y="0" width="280" height="550" rx="14" fill="#0d1322" stroke="#1e293b"/>
+    <g transform="translate(16, 16)">
+      <text x="0" y="14" fill="#94a3b8" font-size="12" font-weight="700" letter-spacing="1">CODE REVIEW</text>
+      <rect x="105" y="2" width="20" height="16" rx="4" fill="#1e293b"/>
+      <text x="111" y="14" fill="#94a3b8" font-size="10" font-weight="bold">1</text>
+    </g>
+
+    <g transform="translate(12, 45)">
+      <rect x="0" y="0" width="256" height="120" rx="10" fill="#141a29" stroke="#1e293b"/>
+      <rect x="12" y="12" width="50" height="18" rx="4" fill="#1e293b"/>
+      <text x="18" y="24" fill="#94a3b8" font-size="10" font-family="monospace">#TRK-98</text>
+      <text x="12" y="52" fill="#f1f5f9" font-size="13" font-weight="600">Team Capacity Heatmap</text>
+      <text x="12" y="70" fill="#64748b" font-size="11">Visual workload spread for leads</text>
+      <rect x="12" y="86" width="60" height="18" rx="4" fill="#0f172a" stroke="#334155"/>
+      <text x="18" y="98" fill="#cbd5e1" font-size="10">Analytics</text>
+      <text x="190" y="98" fill="#a78bfa" font-size="11">✓ PR #42</text>
+    </g>
+  </g>
+
+  <!-- Col 4: DONE -->
+  <g transform="translate(950, 140)">
+    <rect x="0" y="0" width="290" height="550" rx="14" fill="#0d1322" stroke="#1e293b"/>
+    <g transform="translate(16, 16)">
+      <text x="0" y="14" fill="#10b981" font-size="12" font-weight="700" letter-spacing="1">DONE</text>
+      <rect x="52" y="2" width="20" height="16" rx="4" fill="#064e3b"/>
+      <text x="58" y="14" fill="#6ee7b7" font-size="10" font-weight="bold">5</text>
+    </g>
+
+    <g transform="translate(12, 45)">
+      <rect x="0" y="0" width="266" height="95" rx="10" fill="#0d1726" stroke="#1e293b"/>
+      <circle cx="22" cy="24" r="8" fill="#065f46"/>
+      <path d="M18 24l3 3 5-5" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="36" y="28" fill="#94a3b8" font-size="11" font-family="monospace">#TRK-95</text>
+      <text x="12" y="56" fill="#cbd5e1" font-size="13" font-weight="600">Drag &amp; Drop State Machine</text>
+      <text x="12" y="76" fill="#64748b" font-size="11">Shipped · 6.5 hrs logged</text>
+    </g>
+
+    <g transform="translate(12, 150)">
+      <rect x="0" y="0" width="266" height="95" rx="10" fill="#0d1726" stroke="#1e293b"/>
+      <circle cx="22" cy="24" r="8" fill="#065f46"/>
+      <path d="M18 24l3 3 5-5" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="36" y="28" fill="#94a3b8" font-size="11" font-family="monospace">#TRK-91</text>
+      <text x="12" y="56" fill="#cbd5e1" font-size="13" font-weight="600">Weekly PDF Audit Export</text>
+      <text x="12" y="76" fill="#64748b" font-size="11">Shipped · 4 hrs logged</text>
+    </g>
+  </g>
+</svg>

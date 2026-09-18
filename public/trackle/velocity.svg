@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" style="background:#090d16; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141a29"/>
+      <stop offset="100%" stop-color="#0c101a"/>
+    </linearGradient>
+    <linearGradient id="chartArea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1280" height="60" fill="url(#headerGrad3)"/>
+  <line x1="0" y1="60" x2="1280" y2="60" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Window controls -->
+  <circle cx="28" cy="30" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="30" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="30" r="6" fill="#10b981"/>
+
+  <!-- Brand logo & Workspace -->
+  <g transform="translate(100, 18)">
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="#8b5cf6"/>
+    <path d="M7 12h10M12 7v10" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="34" y="17" fill="#ffffff" font-size="15" font-weight="700" letter-spacing="0.5">Trackle</text>
+    <rect x="96" y="2" width="1" height="20" fill="#334155"/>
+    <text x="110" y="16" fill="#94a3b8" font-size="13" font-family="monospace">trackgle.jseven.in</text>
+    <rect x="250" y="2" width="70" height="20" rx="4" fill="#1e1b4b" stroke="#4338ca"/>
+    <text x="258" y="16" fill="#a5b4fc" font-size="11" font-weight="600">Sprint 14</text>
+  </g>
+
+  <!-- Navigation items -->
+  <g transform="translate(480, 22)">
+    <text x="0" y="14" fill="#94a3b8" font-size="13">Sprint Board</text>
+    <text x="110" y="14" fill="#94a3b8" font-size="13">Timesheets</text>
+    <text x="220" y="14" fill="#94a3b8" font-size="13">Backlog</text>
+    <text x="310" y="14" fill="#a78bfa" font-size="13" font-weight="600">Velocity Reports</text>
+    <rect x="310" y="26" width="95" height="2" fill="#8b5cf6"/>
+  </g>
+
+  <!-- Main Content Header -->
+  <rect x="0" y="60" width="1280" height="64" fill="#0c111d"/>
+  <line x1="0" y1="124" x2="1280" y2="124" stroke="#1e293b" stroke-width="1"/>
+
+  <g transform="translate(40, 78)">
+    <text x="0" y="20" fill="#ffffff" font-size="20" font-weight="800">Sprint 14: Burn-Down &amp; Team Velocity Analytics</text>
+    <rect x="520" y="5" width="140" height="22" rx="6" fill="#064e3b" stroke="#059669"/>
+    <text x="530" y="19" fill="#6ee7b7" font-size="11" font-weight="600">42 / 48 SP Shipped</text>
+  </g>
+
+  <!-- CHART & TELEMETRY SECTION -->
+  <g transform="translate(40, 145)">
+    <!-- Main Burn-down Chart Container -->
+    <rect x="0" y="0" width="780" height="530" rx="14" fill="#0d1322" stroke="#1e293b"/>
+    <g transform="translate(24, 24)">
+      <text x="0" y="16" fill="#ffffff" font-size="15" font-weight="700">Sprint 14 Burn-Down Curve</text>
+      <text x="0" y="36" fill="#94a3b8" font-size="12">Daily remaining story points vs ideal trajectory</text>
+
+      <!-- Chart Grid Lines -->
+      <g transform="translate(40, 70)">
+        <line x1="0" y1="0" x2="650" y2="0" stroke="#1e293b" stroke-dasharray="4"/>
+        <text x="-35" y="5" fill="#64748b" font-size="11" font-family="monospace">48 SP</text>
+        <line x1="0" y1="80" x2="650" y2="80" stroke="#1e293b" stroke-dasharray="4"/>
+        <text x="-35" y="85" fill="#64748b" font-size="11" font-family="monospace">36 SP</text>
+        <line x1="0" y1="160" x2="650" y2="160" stroke="#1e293b" stroke-dasharray="4"/>
+        <text x="-35" y="165" fill="#64748b" font-size="11" font-family="monospace">24 SP</text>
+        <line x1="0" y1="240" x2="650" y2="240" stroke="#1e293b" stroke-dasharray="4"/>
+        <text x="-35" y="245" fill="#64748b" font-size="11" font-family="monospace">12 SP</text>
+        <line x1="0" y1="320" x2="650" y2="320" stroke="#334155"/>
+        <text x="-30" y="325" fill="#64748b" font-size="11" font-family="monospace">0 SP</text>
+
+        <!-- X Axis labels -->
+        <text x="20" y="345" fill="#64748b" font-size="11">Day 1</text>
+        <text x="130" y="345" fill="#64748b" font-size="11">Day 3</text>
+        <text x="250" y="345" fill="#64748b" font-size="11">Day 5</text>
+        <text x="370" y="345" fill="#64748b" font-size="11">Day 7</text>
+        <text x="490" y="345" fill="#64748b" font-size="11">Day 9</text>
+        <text x="600" y="345" fill="#a78bfa" font-size="11" font-weight="bold">Day 10 (Today)</text>
+
+        <!-- Ideal Guideline -->
+        <line x1="0" y1="0" x2="640" y2="320" stroke="#475569" stroke-width="2" stroke-dasharray="6"/>
+
+        <!-- Actual Burn-Down Fill & Stroke -->
+        <polygon points="0,0 70,20 140,75 220,130 310,180 400,230 490,270 580,295 580,320 0,320" fill="url(#chartArea)"/>
+        <polyline points="0,0 70,20 140,75 220,130 310,180 400,230 490,270 580,295" fill="none" stroke="#8b5cf6" stroke-width="3.5" stroke-linecap="round"/>
+        
+        <!-- Live point -->
+        <circle cx="580" cy="295" r="6" fill="#8b5cf6" stroke="#ffffff" stroke-width="2"/>
+        <rect x="520" y="245" width="120" height="32" rx="6" fill="#1e1b4b" stroke="#8b5cf6"/>
+        <text x="532" y="265" fill="#e9d5ff" font-size="11" font-weight="bold">6 SP Remaining</text>
+      </g>
+    </g>
+
+    <!-- Right Side Team Workload Cards -->
+    <g transform="translate(810, 0)">
+      <rect x="0" y="0" width="390" height="530" rx="14" fill="#0d1322" stroke="#1e293b"/>
+      <g transform="translate(24, 24)">
+        <text x="0" y="16" fill="#ffffff" font-size="15" font-weight="700">Team Capacity Allocation</text>
+        <text x="0" y="36" fill="#94a3b8" font-size="12">Active hours logged vs weekly bandwidth</text>
+
+        <!-- Member 1: Nirmal Priyadarshan -->
+        <g transform="translate(0, 60)">
+          <rect x="0" y="0" width="342" height="90" rx="10" fill="#141a29" stroke="#8b5cf6" stroke-width="1.2"/>
+          <circle cx="28" cy="28" r="14" fill="#8b5cf6"/>
+          <text x="21" y="32" fill="#ffffff" font-size="11" font-weight="bold">NP</text>
+          <text x="52" y="26" fill="#ffffff" font-size="13" font-weight="700">Nirmal Priyadarshan</text>
+          <text x="52" y="42" fill="#a78bfa" font-size="11">Lead Product Designer</text>
+          <text x="255" y="34" fill="#34d399" font-size="13" font-family="monospace" font-weight="bold">38.5 / 40h</text>
+          <rect x="16" y="60" width="310" height="6" rx="3" fill="#1e293b"/>
+          <rect x="16" y="60" width="298" height="6" rx="3" fill="#8b5cf6"/>
+        </g>
+
+        <!-- Member 2: Senior Backend Dev -->
+        <g transform="translate(0, 165)">
+          <rect x="0" y="0" width="342" height="90" rx="10" fill="#141a29" stroke="#1e293b"/>
+          <circle cx="28" cy="28" r="14" fill="#3b82f6"/>
+          <text x="21" y="32" fill="#ffffff" font-size="11" font-weight="bold">AK</text>
+          <text x="52" y="26" fill="#ffffff" font-size="13" font-weight="700">Arun Kumar</text>
+          <text x="52" y="42" fill="#94a3b8" font-size="11">Senior Full-Stack</text>
+          <text x="255" y="34" fill="#38bdf8" font-size="13" font-family="monospace" font-weight="bold">36.0 / 40h</text>
+          <rect x="16" y="60" width="310" height="6" rx="3" fill="#1e293b"/>
+          <rect x="16" y="60" width="279" height="6" rx="3" fill="#3b82f6"/>
+        </g>
+
+        <!-- Member 3: QA & Automation -->
+        <g transform="translate(0, 270)">
+          <rect x="0" y="0" width="342" height="90" rx="10" fill="#141a29" stroke="#1e293b"/>
+          <circle cx="28" cy="28" r="14" fill="#10b981"/>
+          <text x="21" y="32" fill="#ffffff" font-size="11" font-weight="bold">PS</text>
+          <text x="52" y="26" fill="#ffffff" font-size="13" font-weight="700">Priya Sharma</text>
+          <text x="52" y="42" fill="#94a3b8" font-size="11">QA &amp; Automation</text>
+          <text x="255" y="34" fill="#34d399" font-size="13" font-family="monospace" font-weight="bold">40.0 / 40h</text>
+          <rect x="16" y="60" width="310" height="6" rx="3" fill="#1e293b"/>
+          <rect x="16" y="60" width="310" height="6" rx="3" fill="#10b981"/>
+        </g>
+
+        <!-- Impact Stat Badge -->
+        <g transform="translate(0, 385)">
+          <rect x="0" y="0" width="342" height="70" rx="10" fill="#1e1b4b" stroke="#6366f1"/>
+          <text x="18" y="28" fill="#e9d5ff" font-size="12" font-weight="bold">⚡ 1-Sprint Launch Velocity</text>
+          <text x="18" y="48" fill="#c7d2fe" font-size="11">Zero timesheet reconciliation delay on Fridays</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
