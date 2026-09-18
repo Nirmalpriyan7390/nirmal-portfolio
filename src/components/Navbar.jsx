@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, ArrowUpRight, Menu, X, Sparkles } from 'lucide-react';
 import LinkedinIcon from './icons/LinkedinIcon';
+import BehanceIcon from './icons/BehanceIcon';
 import NLogo from './icons/NLogo';
 import { portfolioData } from '../data/portfolioData';
 import { soundFx } from '../utils/soundEffects';
@@ -74,9 +75,22 @@ export default function Navbar() {
             </a>
 
             <a
+              href={portfolioData.meta.behanceUrl || "https://www.behance.net/nirmalpriyada"}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => soundFx.playClick()}
+              aria-label="View Behance Profile"
+              className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-full bg-[#121622] hover:bg-[#1a2030] text-slate-200 hover:text-white border border-white/10 hover:border-brand-500/40 text-xs font-semibold tracking-tight transition-all duration-200 shadow-sm hover:scale-105"
+            >
+              <BehanceIcon className="w-3.5 h-3.5 text-blue-400" />
+              <span>View Behance</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" />
+            </a>
+
+            <a
               href="#contact"
               onClick={() => soundFx.playClick()}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-slate-950 hover:bg-brand-400 hover:text-white text-xs font-bold tracking-tight transition-all duration-200 shadow-md hover:shadow-brand-500/30 hover:scale-105"
+              className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white text-slate-950 hover:bg-brand-400 hover:text-white text-xs font-bold tracking-tight transition-all duration-200 shadow-md hover:shadow-brand-500/30 hover:scale-105"
             >
               <span>Let's talk</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -139,6 +153,19 @@ export default function Navbar() {
               className="block px-3 py-2 rounded-xl text-slate-200 hover:bg-white/5"
             >
               About Nirmal
+            </a>
+            <a
+              href={portfolioData.meta.behanceUrl || "https://www.behance.net/nirmalpriyada"}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-between px-3 py-2 rounded-xl text-blue-400 hover:bg-blue-500/10 font-semibold"
+            >
+              <span className="flex items-center gap-2">
+                <BehanceIcon className="w-3.5 h-3.5" />
+                View Behance
+              </span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
             <a
               href="#contact"

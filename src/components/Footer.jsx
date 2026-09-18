@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUp, Mail, Sparkles } from 'lucide-react';
 import LinkedinIcon from './icons/LinkedinIcon';
+import BehanceIcon from './icons/BehanceIcon';
 import NLogo from './icons/NLogo';
 import { portfolioData } from '../data/portfolioData';
 import { soundFx } from '../utils/soundEffects';
@@ -39,6 +40,15 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-4 h-4" />
+              </a>
+              <a
+                href={portfolioData.meta.behanceUrl || "https://www.behance.net/nirmalpriyada"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+                aria-label="Behance"
+              >
+                <BehanceIcon className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${portfolioData.meta.email}`}

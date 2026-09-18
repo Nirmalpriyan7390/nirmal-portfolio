@@ -12,6 +12,8 @@ export const portfolioData = {
     email: "nirmaluiux7@gmail.com",
     linkedin: "linkedin.com/in/nirmal-uiux",
     linkedinUrl: "https://linkedin.com/in/nirmal-uiux",
+    behance: "behance.net/nirmalpriyada",
+    behanceUrl: "https://www.behance.net/nirmalpriyada",
     status: "Available for full-time product design roles & select projects"
   },
 
@@ -1538,6 +1540,8 @@ export const portfolioData = {
     email: "nirmaluiux7@gmail.com",
     linkedin: "linkedin.com/in/nirmal-uiux",
     linkedinUrl: "https://linkedin.com/in/nirmal-uiux",
+    behance: "behance.net/nirmalpriyada",
+    behanceUrl: "https://www.behance.net/nirmalpriyada",
     location: "Tamil Nadu, India — open to remote & global collaboration"
   }
 };
