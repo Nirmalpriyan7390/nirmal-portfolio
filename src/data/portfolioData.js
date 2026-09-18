@@ -27,13 +27,6 @@ export const portfolioData = {
       company: "J7 Technology Solutions Pvt Ltd- Alangulam",
       period: "Mar 2024 - Mar 2025",
       isCurrent: false
-    },
-    {
-      role: "UI/UX Designer (Internship)",
-      type: "Internship",
-      company: "Fabevy Technologies- Tenkasi",
-      period: "May 2023 - Oct 2023",
-      isCurrent: false
     }
   ],
 
