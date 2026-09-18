@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ArrowRight, ExternalLink, Sparkles, ShieldCheck, Zap, Layers, Terminal } from 'lucide-react';
+import { ArrowDown, ArrowRight, ExternalLink, Sparkles, ShieldCheck, Zap, Layers, Terminal, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import AnimatedCounter from './AnimatedCounter';
@@ -88,24 +88,26 @@ export default function Hero() {
           className="flex flex-wrap items-center gap-4 mb-16"
         >
           <motion.a
-            href="#work"
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ y: -2, scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => soundFx.playClick()}
             className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-slate-950 hover:bg-brand-400 hover:text-white font-bold text-sm transition-all duration-200 shadow-xl shadow-white/5 hover:shadow-brand-500/40"
           >
-            <span>View my work</span>
-            <ArrowRight className="w-4 h-4" />
+            <FileText className="w-4 h-4" />
+            <span>Resume</span>
           </motion.a>
 
           <motion.a
-            href="#contact"
+            href="#work"
             whileHover={{ y: -2, scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => soundFx.playClick()}
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#0e1118] hover:bg-[#141822] border border-white/10 hover:border-brand-500/40 text-slate-200 hover:text-white text-sm font-semibold transition-all shadow-md"
           >
-            <span>Let's talk</span>
+            <span>View my work</span>
             <ArrowRight className="w-4 h-4 text-brand-400" />
           </motion.a>
         </motion.div>
