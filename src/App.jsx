@@ -168,7 +168,7 @@ export default function App() {
             {/* 6. Product Thinking ("More than UI" - 6 Core Questions) */}
             <ProductThinking />
 
-            {/* 7. Experience (UI/UX & Product Designer Career History) */}
+            {/* 7. Experience (Product Designer Career History) */}
             <ExperienceSection />
 
             {/* 11. About Nirmal ("Designer. Builder. AI explorer.") */}

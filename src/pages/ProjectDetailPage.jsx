@@ -1387,7 +1387,7 @@ export default function ProjectDetailPage({ projectId, onBack }) {
                       Employee Identity &amp; Role Hierarchy
                     </h4>
                     <p className="text-xs text-slate-300 leading-relaxed">
-                      User profile management anchoring Nirmal Priyadarshan M V as <strong className="text-white">UI/UX Designer</strong> (Employee Role) at J7 Technology.
+                      User profile management anchoring Nirmal Priyadarshan M V as <strong className="text-white">Product Designer</strong> (Employee Role) at J7 Technology.
                     </p>
                     <p className="text-xs text-slate-400 leading-relaxed">
                       Surfaces reporting lines (Reporting Manager: Deva J), phone and corporate email credentials, plus integrated self-service security &amp; password change modules.

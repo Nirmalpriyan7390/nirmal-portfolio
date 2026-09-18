@@ -66,7 +66,7 @@ export default function Navbar() {
                 Nirmal Priyadarshan
               </span>
               <span className="text-[10px] text-brand-400 font-mono hidden sm:inline leading-none">
-                Product Designer (UI/UX)
+                Product Designer
               </span>
             </div>
           </a>

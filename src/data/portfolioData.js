@@ -1,13 +1,13 @@
 export const portfolioData = {
   meta: {
     name: "Nirmal Priyadarshan",
-    title: "Product Designer (UI/UX)",
+    title: "Product Designer",
     tagline: "Designing intuitive digital products that solve real problems.",
     subheadline: "Product Designer with 2+ years of experience designing 6+ live commercial products across B2B SaaS, Healthcare, and Mobile apps. Leveraging modern AI-assisted workflows to ship production-grade experiences 2x faster.",
-    supportingLine: "Product Design · UI/UX · B2B SaaS · Mobile Apps · Design Systems",
+    supportingLine: "Product Design · B2B SaaS · Mobile Apps · Design Systems",
     uvp: "I design intuitive products from 0 to 1, bridging user empathy with engineering feasibility.",
     background: "B.Sc. Information Technology",
-    experience: "2+ years in Product Design / UI/UX",
+    experience: "2+ years in Product Design",
     location: "Tamil Nadu, India — open to remote & global roles",
     email: "nirmaluiux7@gmail.com",
     linkedin: "linkedin.com/in/nirmal-uiux",
@@ -25,7 +25,7 @@ export const portfolioData = {
       isCurrent: true
     },
     {
-      role: "UI UX Designer",
+      role: "Product Designer",
       company: "J7 Technology Solutions Pvt Ltd- Alangulam",
       period: "Mar 2024 - Mar 2025",
       isCurrent: false
@@ -34,7 +34,7 @@ export const portfolioData = {
 
   skills: [
     "Product Design",
-    "UI/UX Design",
+    "Interaction Design",
     "AI-Powered Design",
     "UX Research",
     "User Flows",
@@ -195,7 +195,7 @@ export const portfolioData = {
       mockupType: "dual",
       featuredImage: "/index-waves/thumbnail-dual.png?v=3",
       accentColor: "#8b5cf6",
-      role: "UI UX Designer",
+      role: "Product Designer",
       developer: "JSEVEN",
       playStoreRating: "4.2",
       playStoreReviewsCount: "15 reviews",
@@ -447,7 +447,7 @@ export const portfolioData = {
       subtitle: "A universal healthcare scheduling platform that lets patients book online instead of calling the office, seamlessly integrating with any clinic's backend software.",
       tag: "Healthcare SaaS · 7 Clients · 1,600+ Appts/Wk",
       clientType: "US Healthcare Systems & Outpatient Clinics",
-      role: "UI UX Designer",
+      role: "Product Designer",
       mockupType: "browser",
       featuredImage: "/setter/thumbnail-mockup.png?v=2",
       accentColor: "#0284c7",
@@ -1109,7 +1109,7 @@ export const portfolioData = {
           badge: "Profile & Access",
           route: "trackgle.jseven.in/settings",
           image: "/trackle/profile-settings.png",
-          caption: "User profile management anchoring Nirmal Priyadarshan's role as UI/UX Designer at J7 Technology, displaying verified corporate credentials, reporting hierarchy (under Deva J), and credential management."
+          caption: "User profile management anchoring Nirmal Priyadarshan's role as Product Designer at J7 Technology, displaying verified corporate credentials, reporting hierarchy (under Deva J), and credential management."
         }
       ],
       sections: {
@@ -1209,7 +1209,7 @@ export const portfolioData = {
       title: "Farm Produce",
       subtitle: "Mobile-first farm-fresh delivery for a family farm going digital",
       tag: "E-Commerce · Mobile · Farm-to-Consumer",
-      role: "UI/UX Designer",
+      role: "Product Designer",
       status: "in-progress",
       mockupType: "phone",
       featuredImage: "/farm-produce/home.png",
@@ -1403,7 +1403,7 @@ export const portfolioData = {
       title: "Layline Campaigns",
       subtitle: "SMS and email campaign platform for healthcare operators",
       tag: "B2B SaaS · SMS & Email · Healthcare Operators",
-      role: "UI UX Designer",
+      role: "Product Designer",
       mockupType: "browser",
       liveUrl: "https://campaigns.layline.live/",
       featuredImage: "/campaigns/creation.jpg",
@@ -1451,7 +1451,7 @@ export const portfolioData = {
       title: "IppoKart",
       subtitle: "Multi-category e-commerce marketplace with real-time inventory validation",
       tag: "E-Commerce · Web Marketplace · Live Production",
-      role: "UI UX Designer",
+      role: "Product Designer",
       mockupType: "browser",
       featuredImage: "/ippokart/thumbnail.png",
       accentColor: "#ea580c",
@@ -1507,7 +1507,7 @@ export const portfolioData = {
 
   about: {
     headline: "Product Designer crafting experiences that scale.",
-    intro: "I'm Nirmal Priyadarshan, a Product Designer (UI/UX) with a background in Information Technology.\n\nI turn complex business workflows into simple, human digital experiences.\n\nOver the past few years, I've designed and shipped 6+ live commercial products across B2B SaaS, Healthcare, Fintech, and Mobile applications.\n\nWith a technical foundation in IT, I bridge the gap between user empathy, business metrics, and engineering feasibility.\n\nI combine deep product thinking, scalable design systems, and modern AI-assisted prototyping to explore, test, and ship high-impact software faster.",
+    intro: "I'm Nirmal Priyadarshan, a Product Designer with a background in Information Technology.\n\nI turn complex business workflows into simple, human digital experiences.\n\nOver the past few years, I've designed and shipped 6+ live commercial products across B2B SaaS, Healthcare, Fintech, and Mobile applications.\n\nWith a technical foundation in IT, I bridge the gap between user empathy, business metrics, and engineering feasibility.\n\nI combine deep product thinking, scalable design systems, and modern AI-assisted prototyping to explore, test, and ship high-impact software faster.",
     philosophies: [
       {
         title: "Start with the problem.",

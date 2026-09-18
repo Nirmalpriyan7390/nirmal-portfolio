@@ -11,7 +11,7 @@ export default function ExperienceSection() {
       isCurrent: true
     },
     {
-      role: 'UI UX Designer',
+      role: 'Product Designer',
       company: 'J7 Technology Solutions Pvt Ltd- Alangulam',
       period: 'Mar 2024 - Mar 2025',
       isCurrent: false
@@ -31,7 +31,7 @@ export default function ExperienceSection() {
             Experience
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-xl">
-            My professional career as a UI/UX & Product Designer crafting production web and mobile software.
+            My professional career as a Product Designer crafting production web and mobile software.
           </p>
         </div>
 
