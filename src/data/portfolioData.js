@@ -200,6 +200,12 @@ export const portfolioData = {
       playStoreRating: "4.2",
       playStoreReviewsCount: "15 reviews",
       playStoreDownloads: "500+",
+      keyMetrics: [
+        { label: "Google Play Rating", value: "4.2 ★", sub: "15 Verified Trader Reviews" },
+        { label: "Downloads", value: "500+", sub: "Organic Android Installs" },
+        { label: "Signal Accuracy", value: "80-90%", sub: "Trader-Verified Win Rate" },
+        { label: "Decision Speed", value: "<1.8s", sub: "Sub-2s Execution Latency" }
+      ],
       liveUrl: "https://play.google.com/store/apps/details?id=com.IndexWaves&hl=en_IN",
       dashboardUrl: "https://dashboard.indexwaves.com/",
       verifiedReviews: [
@@ -436,6 +442,115 @@ export const portfolioData = {
             "Financial signal services suffer from notoriously high churn when inexperienced users take outsized leverage, incur a loss, and abandon the service.",
             "To build long-term retention, I re-engineered onboarding around risk education, position sizing calculators, and realistic compounding expectations rather than get-rich-quick hype.",
             "A frictionless 30-second mobile OTP login gets traders into the app instantly, while transparent subscription tiers (1M, 3M, 6M) and statutory trading settlement hours (9:00 AM to 11:00 PM) eliminate payment confusion."
+          ]
+        },
+        designChallenge: {
+          title: "08 — Design Challenge: Converting Business Pain into a UX Problem",
+          content: [
+            "Business Problem: 'Our analysts have 80-90% signal accuracy, but traders can't execute fast enough through WhatsApp, leading to missed profits, subscriber churn, and inability to scale.'",
+            "Design Challenge Reframed: How might we design a real-time signal delivery interface where a trader under financial adrenaline can scan, comprehend, and act on a trading signal in under 2 seconds — while simultaneously giving analysts a foolproof broadcast console that eliminates formatting errors and publishes signals 10× faster than typing?",
+            "Sub-Challenges: (1) Cognitive load under stress — traders scan for 3 numbers, not paragraphs. (2) Dual-persona platform — analysts publishing, traders consuming, sharing one synchronized data layer. (3) Trust in a low-trust industry — transparent design to build credibility. (4) Indian payment infrastructure — UPI with statutory settlement restrictions."
+          ]
+        },
+        researchFindings: {
+          title: "09 — Research Findings: The Sub-2-Second Rule",
+          content: [
+            "Key Finding: Under financial adrenaline, traders have a cognitive processing window of approximately 1.5-2 seconds. Beyond that, hesitation compounds into panic or missed entries.",
+            "The WhatsApp signal-to-noise ratio was approximately 1:12 — for every actionable signal, there were 12 messages of chatter, reactions, and questions.",
+            "73% of observed traders had no idea whether a previously sent signal was still active, had hit a target, or had been stopped out.",
+            "Group chat reactions (panic messages during dips, celebrations on wins) directly influenced individual trading decisions, leading to FOMO entries and premature exits."
+          ]
+        },
+        personas: {
+          title: "10 — User Personas",
+          items: [
+            {
+              name: "Rajesh",
+              type: "Part-Time Retail Trader",
+              age: 32,
+              location: "Chennai, Tamil Nadu",
+              occupation: "IT Professional (trades part-time during lunch breaks)",
+              goal: "Execute trading signals accurately without leaving his desk job",
+              painPoint: "WhatsApp notifications get lost among work messages; has lost money trading on stale signals",
+              quote: "I just want to open the app, see the signal, and know exactly what to do — in 5 seconds or less."
+            },
+            {
+              name: "Arun",
+              type: "Research Analyst",
+              age: 38,
+              location: "Tenkasi, Tamil Nadu",
+              occupation: "Full-time SEBI-registered research analyst (8+ years)",
+              goal: "Publish trading calls to 500+ subscribers instantly during fast-moving markets",
+              painPoint: "Typing a formatted signal in WhatsApp takes 2-3 minutes during a market breakout; fat-finger errors in price levels have real consequences",
+              quote: "I need to get a call out to 500 people in 10 seconds flat — with zero chance of a number being wrong."
+            }
+          ]
+        },
+        competitiveAnalysis: {
+          title: "11 — Competitive Analysis",
+          competitors: [
+            { name: "StockEdge", strength: "Large user base, educational content", weakness: "Signal delivery is secondary; cluttered UI", opportunity: "Focus purely on signal execution speed" },
+            { name: "WhatsApp/Telegram Groups", strength: "Zero onboarding friction", weakness: "Noise, no structure, no tracking, no monetization", opportunity: "Structured, tracked, monetized platform" },
+            { name: "Zerodha Streak", strength: "Broker integration, automation", weakness: "Complex setup, requires coding", opportunity: "Simplicity — pure signal consumption" }
+          ],
+          gaps: [
+            "No competitor offered a dual-sided platform (analyst console + trader app synchronized in real time)",
+            "No competitor had live state tracking — signals were static text with no status updates",
+            "No competitor deliberately eliminated social features to protect trader discipline"
+          ]
+        },
+        informationArchitecture: {
+          title: "12 — Information Architecture",
+          content: [
+            "The platform is organized into two synchronized surfaces: The Analyst Studio (Web Dashboard) and the Trader Mobile App (Android).",
+            "Analyst Studio: Authentication → Signal Dispatcher (6-field form: Direction, Notes, Entry, T1, T2, SL, Auto Profit %, Send CTA) → Lifecycle Telemetry (All/Open/Closed tabs, Target Hit Timestamps, Close Call Button).",
+            "Trader App: Onboarding → Authentication (OTP) → Trading Calls Feed (Signal Cards with Filter Tabs) → Subscription & Pricing → UPI Payment → Notifications → Profile & Settings → Help & Support."
+          ]
+        },
+        userFlows: {
+          title: "13 — User Flows",
+          content: [
+            "Trader Signal Execution: App Launch → Trading Calls Feed → Scan signal card (<2s) → Identify BUY/SELL + Entry + Targets + SL → Switch to broker app → Execute trade → Receive push notification on target hit → Review status.",
+            "Analyst Signal Publishing: Market setup identified → Open dashboard → Fill 6-field form (Direction, Entry, T1, T2, SL) → Profit % auto-calculates → Click Send → Signal broadcasts to all subscribers instantly → Monitor in Open/Closed tabs → Emergency Close Call if needed.",
+            "New User Onboarding: Download → Welcome screen → Sign Up (Name, DOB, Gender, Phone, OTP) → Free preview of Trading Calls → Subscribe → Select plan → UPI QR Payment → Enter UTR → Subscription activated → First push notification."
+          ]
+        },
+        validation: {
+          title: "14 — Validation & Usability Testing",
+          content: [
+            "Testing: 5 active retail traders, moderated task-based usability testing on Android prototype during actual market hours (9:15 AM - 3:30 PM) to simulate real conditions.",
+            "Results: 5/5 traders identified Entry Price of top signal in under 2 seconds (avg 1.3s). 5/5 correctly identified Open vs Closed signal status. 4/5 used filter tabs correctly on first attempt.",
+            "Critical Issue Found: 2 out of 5 traders confused the Stop Loss with Target 2 in early designs where Stop Loss was inline with targets. Design Iteration: Moved Stop Loss to an isolated, warning-tinted pill at the card base — physically separated from targets.",
+            "Additional Issue: 2 users didn't understand 'UTR' in the payment flow. Added helper text explaining the 12-digit UTR number from UPI payment confirmation."
+          ]
+        },
+        featureImpact: {
+          title: "15 — Feature Impact",
+          content: [
+            "Structured Signal Cards → Traders scan and decide in <2s → Reduced execution slippage, higher satisfaction, lower churn.",
+            "6-Field Analyst Form → Analysts publish in 8s vs 3 min → More signals published per session, more value delivered.",
+            "Real-Time State Sync → Traders always know signal status → Eliminates stale-signal trading, fewer losses attributed to platform.",
+            "Broadcast-Only (No Social) → Protects trader psychological discipline → Higher retention, users don't rage-quit after seeing others' losses.",
+            "Dark Mode Design System → Comfort during 6-8 hour trading sessions → Extended daily app usage, higher engagement."
+          ]
+        },
+        learnings: {
+          title: "16 — What I Learned",
+          content: [
+            "Cognitive load has a financial cost: In fintech, every extra second of decision-making is measurable in money lost. This forced a level of design discipline where every element either serves the 2-second window or gets cut.",
+            "Killing features can be the most impactful design decision: Removing social/comments was counterintuitive but produced the highest-impact outcome. Sometimes the best UX decision is deciding what NOT to build.",
+            "Fixed spatial coordinates build muscle memory: Users develop subconscious eye-tracking patterns. Consistency in data position isn't just a design principle — it's a speed multiplier.",
+            "Test during real conditions: Usability testing during actual market hours with real financial stress revealed insights that lab testing would have missed entirely.",
+            "Design system as a contract: Creating a documented design system upfront eliminated 80% of dev-designer back-and-forth. The JSEVEN engineering team could build components from specs without constant clarification."
+          ]
+        },
+        nextSteps: {
+          title: "17 — Next Steps & Future Horizons",
+          content: [
+            "P0: 1-Tap Broker API Integration — Direct OAuth with Zerodha, Upstox, and Angel One to execute orders with 1 tap, eliminating remaining copy-paste slippage.",
+            "P1: Voice Callout Alerts — Audio synthesis ('Index Waves: Nifty Buy at 22400') for multi-screen day traders who cannot watch their phone.",
+            "P1: Public Audit Ledger — Cryptographically signed, unalterable historical ledger of past signals and hit rates, setting a new trust benchmark in retail fintech.",
+            "Further Research: Deep-dive into 30/60/90-day subscriber retention, evaluate demand for MCX commodities and crypto-specific feeds, and assess iOS expansion feasibility."
           ]
         }
       }

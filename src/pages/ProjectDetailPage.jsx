@@ -1862,6 +1862,194 @@ export default function ProjectDetailPage({ projectId, onBack }) {
               </section>
             )}
 
+            {/* Step: Design Challenge */}
+            {project.sections.designChallenge && (
+              <section className="space-y-4">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <span>{project.sections.designChallenge.title || "08 — Design Challenge"}</span>
+                </div>
+                <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-violet-950/20 via-[#0c1017] to-[#0c1017] border border-violet-800/30 space-y-4 shadow-lg">
+                  {project.sections.designChallenge.content?.map((p, idx) => (
+                    <p key={idx} className={`text-base sm:text-lg leading-relaxed ${idx === 1 ? 'text-white font-medium text-lg sm:text-xl italic border-l-2 border-violet-500 pl-4' : 'text-slate-300'}`}>
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: Research Findings */}
+            {project.sections.researchFindings && (
+              <section className="space-y-4">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <span>{project.sections.researchFindings.title || "09 — Research Findings"}</span>
+                </div>
+                <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+                  {project.sections.researchFindings.content?.map((p, idx) => (
+                    <p key={idx} className={idx === 0 ? "text-white font-medium" : ""}>{p}</p>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: User Personas */}
+            {project.sections.personas && (
+              <section className="space-y-5">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <Users className="w-4 h-4 text-brand-400" />
+                  <span>{project.sections.personas.title || "10 — User Personas"}</span>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {project.sections.personas.items?.map((persona, idx) => (
+                    <div key={idx} className="p-6 rounded-2xl bg-[#0c1017] border border-slate-800 hover:border-brand-500/40 transition-colors space-y-4 shadow-lg">
+                      <div className="flex items-center gap-3 pb-3 border-b border-slate-800/60">
+                        <div className="w-10 h-10 rounded-full bg-brand-950/60 border border-brand-800/40 flex items-center justify-center text-brand-400 font-bold text-sm">
+                          {persona.name?.charAt(0)}
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-white">{persona.name}</div>
+                          <div className="text-[11px] font-mono text-brand-300">{persona.type}</div>
+                        </div>
+                      </div>
+                      <div className="space-y-2 text-xs text-slate-400">
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-slate-500 w-16 shrink-0">Age</span>
+                          <span className="text-slate-200">{persona.age} · {persona.location}</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span className="font-mono text-slate-500 w-16 shrink-0">Role</span>
+                          <span className="text-slate-200">{persona.occupation}</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span className="font-mono text-emerald-500 w-16 shrink-0">Goal</span>
+                          <span className="text-slate-200">{persona.goal}</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <span className="font-mono text-rose-400 w-16 shrink-0">Pain</span>
+                          <span className="text-slate-200">{persona.painPoint}</span>
+                        </div>
+                      </div>
+                      <div className="pt-3 border-t border-slate-800/60 text-xs text-slate-300 italic">
+                        "{persona.quote}"
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: Competitive Analysis */}
+            {project.sections.competitiveAnalysis && (
+              <section className="space-y-5">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <span>{project.sections.competitiveAnalysis.title || "11 — Competitive Analysis"}</span>
+                </div>
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 gap-3">
+                    {project.sections.competitiveAnalysis.competitors?.map((comp, idx) => (
+                      <div key={idx} className="p-5 rounded-2xl bg-[#0c1017] border border-slate-800 hover:border-brand-500/30 transition-colors">
+                        <div className="flex items-center gap-2 mb-3">
+                          <span className="text-xs font-mono text-brand-400 font-bold bg-brand-950/60 px-2 py-0.5 rounded border border-brand-800/40">
+                            {comp.name}
+                          </span>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                          <div className="space-y-1">
+                            <span className="font-mono text-emerald-400 font-bold block">Strength</span>
+                            <p className="text-slate-300">{comp.strength}</p>
+                          </div>
+                          <div className="space-y-1">
+                            <span className="font-mono text-rose-400 font-bold block">Weakness</span>
+                            <p className="text-slate-300">{comp.weakness}</p>
+                          </div>
+                          <div className="space-y-1">
+                            <span className="font-mono text-violet-400 font-bold block">Our Opportunity</span>
+                            <p className="text-slate-200 font-medium">{comp.opportunity}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {project.sections.competitiveAnalysis.gaps && (
+                    <div className="p-5 rounded-2xl bg-violet-950/20 border border-violet-800/30 space-y-2">
+                      <span className="text-xs font-mono text-violet-400 font-bold block">Key Gaps Discovered</span>
+                      {project.sections.competitiveAnalysis.gaps.map((gap, idx) => (
+                        <p key={idx} className="text-xs sm:text-sm text-slate-300 flex items-start gap-2">
+                          <span className="text-violet-400 font-bold mt-0.5">→</span>
+                          <span>{gap}</span>
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </section>
+            )}
+
+            {/* Step: Information Architecture */}
+            {project.sections.informationArchitecture && (
+              <section className="space-y-4">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <Layers className="w-4 h-4 text-brand-400" />
+                  <span>{project.sections.informationArchitecture.title || "12 — Information Architecture"}</span>
+                </div>
+                <div className="p-6 sm:p-8 rounded-3xl bg-[#0c1017] border border-slate-800 space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed shadow-lg">
+                  {project.sections.informationArchitecture.content?.map((p, idx) => (
+                    <p key={idx} className={idx === 0 ? "text-white font-medium" : "font-mono text-sm text-slate-400"}>{p}</p>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: User Flows */}
+            {project.sections.userFlows && (
+              <section className="space-y-4">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <span>{project.sections.userFlows.title || "13 — User Flows"}</span>
+                </div>
+                <div className="space-y-3">
+                  {project.sections.userFlows.content?.map((p, idx) => (
+                    <div key={idx} className="p-5 rounded-2xl bg-[#0c1017] border border-slate-800 hover:border-brand-500/30 transition-colors">
+                      <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-mono">{p}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: Validation & Usability Testing */}
+            {project.sections.validation && (
+              <section className="space-y-4">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <CheckCircle2 className="w-4 h-4 text-brand-400" />
+                  <span>{project.sections.validation.title || "14 — Validation & Usability Testing"}</span>
+                </div>
+                <div className="p-6 sm:p-8 rounded-3xl bg-[#0c1017] border border-slate-800 space-y-4 shadow-lg">
+                  {project.sections.validation.content?.map((p, idx) => (
+                    <p key={idx} className={`text-sm sm:text-base leading-relaxed ${idx === 2 ? 'text-amber-200 bg-amber-950/30 p-4 rounded-xl border border-amber-800/30' : 'text-slate-300'}`}>
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: Feature Impact */}
+            {project.sections.featureImpact && (
+              <section className="space-y-4">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-400 uppercase tracking-widest font-bold">
+                  <TrendingUp className="w-4 h-4 text-brand-400" />
+                  <span>{project.sections.featureImpact.title || "15 — Feature Impact"}</span>
+                </div>
+                <div className="space-y-2">
+                  {project.sections.featureImpact.content?.map((p, idx) => (
+                    <div key={idx} className="p-4 rounded-xl bg-[#0c1017] border border-slate-800 hover:border-emerald-500/30 transition-colors">
+                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{p}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {/* Step 09: Build & AI-Assisted Delivery */}
             {project.sections.build && (
               <section className="space-y-4">
@@ -1901,6 +2089,23 @@ export default function ProjectDetailPage({ projectId, onBack }) {
                 <div className="space-y-3 text-slate-300 text-base leading-relaxed">
                   {project.sections.learnings.content?.map((p, idx) => (
                     <p key={idx}>{p}</p>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Step: Next Steps & Future Horizons */}
+            {project.sections.nextSteps && (
+              <section className="space-y-4 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-brand-950/30 via-slate-900 to-[#0c1017] border border-brand-800/40 shadow-xl">
+                <div className="flex items-center gap-2 text-xs font-mono text-brand-300 uppercase tracking-widest font-bold">
+                  <Clock className="w-4 h-4 text-brand-400" />
+                  <span>{project.sections.nextSteps.title || "17 — Next Steps & Future Horizons"}</span>
+                </div>
+                <div className="space-y-3">
+                  {project.sections.nextSteps.content?.map((p, idx) => (
+                    <div key={idx} className="p-4 rounded-xl bg-[#080b10] border border-slate-800 hover:border-brand-500/30 transition-colors">
+                      <p className="text-sm text-slate-300 leading-relaxed">{p}</p>
+                    </div>
                   ))}
                 </div>
               </section>
